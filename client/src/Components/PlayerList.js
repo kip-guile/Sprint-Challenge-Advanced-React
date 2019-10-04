@@ -34,11 +34,11 @@ class PlayerList extends Component {
         render(){
         return (
             <div className="App">
-                <MainDiv>
+                <MainDiv data-testid='info-m'>
                 {
                 this.state.players.map(player => { 
                 return (
-                    <div data-testid='info' key={player.id}>  
+                    <div key={player.id}>  
                     <Player 
                     name={player.name}  
                     country={player.country}

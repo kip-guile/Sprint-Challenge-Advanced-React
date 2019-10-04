@@ -1,23 +1,24 @@
 import React from 'react';
 import '@testing-library/jest-dom/extend-expect';
 import * as rtl from '@testing-library/react';
-import Player from '../Player.js';
+import PlayerList from '../PlayerList';
+
 
 let tools;
 
 beforeEach(() => {
     rtl.cleanup();
-    tools = rtl.render(<Player/>);
+    tools = rtl.render(<PlayerList/>);
 });
 
 
-describe('Player component', () => {
+describe('PlayerList component', () => {
     it('can debug the output', () => {
         tools.debug();
     });
 
     it('shows user information', () => {
-        expect(tools.queryByTestId('info')).toBeInTheDocument();
+        expect(tools.queryByTestId('info-m')).toBeInTheDocument();
       });
 
 });
