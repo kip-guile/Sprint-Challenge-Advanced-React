@@ -7,7 +7,7 @@ const MainDiv = styled.div`
 
 const StyledCard = styled.div`
     display: flex;
-    background-color: lightgreen;
+    background-color: aquamarine;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
@@ -30,7 +30,7 @@ class Player extends Component {
           <MainDiv>
             <StyledCard>
             <StyledInfoDiv>
-                <h3>{name}</h3>
+                <h3 data-testid='info'>{name}</h3>
                 <h4>Country: {country}</h4>
                 <h4>Searches: {searches}</h4>
             </StyledInfoDiv>

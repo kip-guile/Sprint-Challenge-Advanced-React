@@ -38,7 +38,7 @@ class PlayerList extends Component {
                 {
                 this.state.players.map(player => { 
                 return (
-                    <div key={player.id}>  
+                    <div data-testid='info' key={player.id}>  
                     <Player 
                     name={player.name}  
                     country={player.country}
