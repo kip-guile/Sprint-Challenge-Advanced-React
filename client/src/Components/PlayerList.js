@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import Player from './Player';
 import axios from 'axios';
+import styled from 'styled-components';
+
+const MainDiv = styled.div`
+    display: flex;
+    flex-wrap: wrap;`
 
 
 class PlayerList extends Component {
@@ -29,6 +34,7 @@ class PlayerList extends Component {
         render(){
         return (
             <div className="App">
+                <MainDiv>
                 {
                 this.state.players.map(player => { 
                 return (
@@ -42,6 +48,7 @@ class PlayerList extends Component {
                     )
                 })
             }
+            </MainDiv>
             </div>
         );
     }
