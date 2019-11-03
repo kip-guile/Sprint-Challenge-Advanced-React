@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+.dark-mode {
+  color: green;
+  background-color: #313843;
+
+}
